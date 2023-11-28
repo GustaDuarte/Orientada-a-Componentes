@@ -1,0 +1,151 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "name": "Produto 1",
+      "price": 19.9,
+      "description": "Descrição do Produto 1",
+      "photo_url": "https://exemplo.com/foto-produto-1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Produto 2",
+      "price": 29.9,
+      "description": "Descrição do Produto 2",
+      "photo_url": "https://exemplo.com/foto-produto-2.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Produto 3",
+      "price": 39.9,
+      "description": "Descrição do Produto 3",
+      "photo_url": "https://exemplo.com/foto-produto-3.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Produto 4",
+      "price": 49.9,
+      "description": "Descrição do Produto 4",
+      "photo_url": "https://exemplo.com/foto-produto-4.jpg"
+    },
+    {
+      "id": 5,
+      "name": "Produto 5",
+      "price": 59.9,
+      "description": "Descrição do Produto 5",
+      "photo_url": "https://exemplo.com/foto-produto-5.jpg"
+    },
+    {
+      "id": 6,
+      "name": "Produto 6",
+      "price": 69.9,
+      "description": "Descrição do Produto 6",
+      "photo_url": "https://exemplo.com/foto-produto-6.jpg"
+    },
+    {
+      "id": 7,
+      "name": "Produto 7",
+      "price": 79.9,
+      "description": "Descrição do Produto 7",
+      "photo_url": "https://exemplo.com/foto-produto-7.jpg"
+    },
+    {
+      "id": 8,
+      "name": "Produto 8",
+      "price": 89.9,
+      "description": "Descrição do Produto 8",
+      "photo_url": "https://exemplo.com/foto-produto-8.jpg"
+    },
+    {
+      "id": 9,
+      "name": "Produto 9",
+      "price": 99.9,
+      "description": "Descrição do Produto 9",
+      "photo_url": "https://exemplo.com/foto-produto-9.jpg"
+    },
+    {
+      "id": 10,
+      "name": "Produto 10",
+      "price": 109.9,
+      "description": "Descrição do Produto 10",
+      "photo_url": "https://exemplo.com/foto-produto-10.jpg"
+    },
+    {
+      "id": 11,
+      "name": "Produto 11",
+      "price": 119.9,
+      "description": "Descrição do Produto 11",
+      "photo_url": "https://exemplo.com/foto-produto-11.jpg"
+    },
+    {
+      "id": 12,
+      "name": "Produto 12",
+      "price": 129.9,
+      "description": "Descrição do Produto 12",
+      "photo_url": "https://exemplo.com/foto-produto-12.jpg"
+    },
+    {
+      "id": 13,
+      "name": "Produto 13",
+      "price": 139.9,
+      "description": "Descrição do Produto 13",
+      "photo_url": "https://exemplo.com/foto-produto-13.jpg"
+    },
+    {
+      "id": 14,
+      "name": "Produto 14",
+      "price": 149.9,
+      "description": "Descrição do Produto 14",
+      "photo_url": "https://exemplo.com/foto-produto-14.jpg"
+    },
+    {
+      "id": 15,
+      "name": "Produto 15",
+      "price": 159.9,
+      "description": "Descrição do Produto 15",
+      "photo_url": "https://exemplo.com/foto-produto-15.jpg"
+    },
+    {
+      "id": 16,
+      "name": "Produto 16",
+      "price": 169.9,
+      "description": "Descrição do Produto 16",
+      "photo_url": "https://exemplo.com/foto-produto-16.jpg"
+    },
+    {
+      "id": 17,
+      "name": "Produto 17",
+      "price": 179.9,
+      "description": "Descrição do Produto 17",
+      "photo_url": "https://exemplo.com/foto-produto-17.jpg"
+    },
+    {
+      "id": 18,
+      "name": "Produto 18",
+      "price": 189.9,
+      "description": "Descrição do Produto 18",
+      "photo_url": "https://exemplo.com/foto-produto-18.jpg"
+    },
+    {
+      "id": 19,
+      "name": "Produto 19",
+      "price": 199.9,
+      "description": "Descrição do Produto 19",
+      "photo_url": "https://exemplo.com/foto-produto-19.jpg"
+    },
+    {
+      "id": 20,
+      "name": "Produto 20",
+      "price": 209.9,
+      "description": "Descrição do Produto 20",
+      "photo_url": "https://exemplo.com/foto-produto-20.jpg"
+    },
+    {
+      "name": "Chris Bumstead o cbum",
+      "price": "8.000",
+      "description": "mais de 8.000",
+      "photo_url": "https://www.hipertrofia.org/blog/wp-content/uploads/2023/08/free-Delivery-4-1068x601-1.jpg",
+      "id": 21
+    }
+  ]
+}
