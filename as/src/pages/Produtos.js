@@ -1,56 +1,45 @@
-import { useContext, useEffect, useState } from "react"
-import CardProdutos from "../components/CardProdutos"
-import Header from "../components/Header"
-import styles from "./Produtos.css"
-import { useNavigate } from "react-router-dom"
-import {ProductContext} from "../contexts/productContext"
-import useFetch from "../hooks/useFetch"
+import { useContext, useEffect } from "react";
+import Header from "../components/Header";
+import styles from "./Produtos.css";
+import { useNavigate } from "react-router-dom";
+import { ProductContext } from "../contexts/productContext";
+import useFetch from "../hooks/useFetch";
+import Footer from "../components/Footer";
 
+function Produtos() {
+  const [data, request] = useFetch("http://localhost:3001/products");
+  const productContext = useContext(ProductContext);
+  productContext.setProduct(data);
 
-function Produtos(){
+  const navigate = useNavigate();
 
-    //const [products, setProducts] = useState();
-    
-    const [data, request] = useFetch("http://localhost:3001/products")
-    const productContext = useContext(ProductContext)
-    productContext.setProduct(data)
+  useEffect(() => {
+    request();
+  }, [request]);
 
-    const navigate = useNavigate()
+  function handleClick(id) {
+    navigate(`${id}`);
+  }
 
-    useEffect(()=>{
+  return (
+    <div>
+      <Header title="Produtos"/>
 
-        request()
-        // const fetchProducts = async() =>{
-        // const result  = await fetch("http://localhost:3001/products") 
-        // const products = await result.json()
-        // setData(products)
-        // productContext.setProducts(products)
-        // }
-        // fetchProducts()
-        
-    }, [request])
-
-    function handleClick(id){
-        navigate(`${id}`)
-    }
-
-
-    return(
-        <div>
-            <Header/>
-            <h1>Produtos</h1>
-
-            {data && data.map((product) =>{
-                return <div onClick={() => handleClick(product.id)} style={{width:"50%", backgroundColor: "red", height:120, marginTop: 40, marginBottom: 40}}> 
-                <h1>{product.name}</h1>
-                <p>{product.price}</p>
-                <p>{product.description}</p>
-                {/* <img style={{width: 200, height: 200}} src={product.photo_url} alt=""/> */}
-                </div>
-            })}
-
-        </div>
-    )
+      <div className="card-container">
+        {data &&
+          data.map((product) => (
+            <div key={product.id} className="card" onClick={() => handleClick(product.id)}>
+              <img src={product.photo_url} alt="" />
+              <div className="card-details">
+                <p>{product.name}</p>
+                <p>R$ {product.price}</p>
+              </div>
+            </div>
+          ))}
+      </div>
+      <Footer />
+    </div>
+  );
 }
 
-export default Produtos
+export default Produtos;

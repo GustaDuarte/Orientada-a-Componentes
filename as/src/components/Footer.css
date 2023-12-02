@@ -1,0 +1,30 @@
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    color: white;
+  }
+  
+  .footer h3 {
+    margin-left: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  
+  .footer p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+
+  .social-icons a {
+    margin-right: 30px;
+  }
+  
+  .social-icons img {
+    width: 30px;
+    height: 30px;
+  }

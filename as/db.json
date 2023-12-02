@@ -5,14 +5,14 @@
       "name": "Produto 1",
       "price": 19.9,
       "description": "Descrição do Produto 1",
-      "photo_url": "https://exemplo.com/foto-produto-1.jpg"
+      "photo_url": "https://cdl-static.s3-sa-east-1.amazonaws.com/covers/gg/9788556510785/a-guerra-dos-tronos.jpg"
     },
     {
       "id": 2,
       "name": "Produto 2",
       "price": 29.9,
       "description": "Descrição do Produto 2",
-      "photo_url": "https://exemplo.com/foto-produto-2.jpg"
+      "photo_url": "https://f.i.uol.com.br/fotografia/2023/10/30/1698694080654003c0982df_1698694080_3x2_md.jpg"
     },
     {
       "id": 3,
@@ -26,7 +26,7 @@
       "name": "Produto 4",
       "price": 49.9,
       "description": "Descrição do Produto 4",
-      "photo_url": "https://exemplo.com/foto-produto-4.jpg"
+      "photo_url": "https://cdl-static.s3-sa-east-1.amazonaws.com/covers/gg/9788556510785/a-guerra-dos-tronos.jpg"
     },
     {
       "id": 5,
@@ -146,6 +146,20 @@
       "description": "mais de 8.000",
       "photo_url": "https://www.hipertrofia.org/blog/wp-content/uploads/2023/08/free-Delivery-4-1068x601-1.jpg",
       "id": 21
+    },
+    {
+      "name": "Chris Bumstead o cbum",
+      "price": "8.000",
+      "description": "mais de 8.000",
+      "photo_url": "https://www.hipertrofia.org/blog/wp-content/uploads/2023/08/free-Delivery-4-1068x601-1.jpg",
+      "id": 22
+    },
+    {
+      "name": "Chris Bumstead o cbum",
+      "price": "8.000",
+      "description": "mais de 8.000",
+      "photo_url": "https://www.hipertrofia.org/blog/wp-content/uploads/2023/08/free-Delivery-4-1068x601-1.jpg",
+      "id": 23
     }
   ]
 }

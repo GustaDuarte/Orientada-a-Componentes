@@ -1,37 +1,47 @@
 import { useContext, useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
-import {ProductContext} from "../contexts/productContext"
+import { ProductContext } from "../contexts/productContext";
+import Footer from "../components/Footer";
+import styles from "./ProdutoSobre.css";
+import Header from "../components/Header";
 
-function ProdutoSobre(){
-    const parms = useParams()
-    const [data, setData] = useState([])
-    const productContext = useContext(ProductContext)
+function ProdutoSobre() {
+  const parms = useParams();
+  const [data, setData] = useState([]);
+  const productContext = useContext(ProductContext);
 
-    useEffect(()=>{
-        
-        // const fetchProducts = async() =>{
-        // const result  = await fetch("http://localhost:3001/products")
-        // const products = await result.json()
+  useEffect(() => {
+    const produtoClicado = productContext.products.filter(
+      (product) => product.id == parms.id
+    );
 
-         const produtoClicado = productContext.products.filter((product)=> product.id == parms.id)
+    setData(produtoClicado[0]);
+  }, []);
 
-         setData(produtoClicado[0])
-        // }
-        // fetchProducts()
-        
-    }, [])
-
-    return(
-        <>
-        {data &&
-            <div>
-                <h1>Sobre o produto {data.id} - {data.name} - {data.price}</h1>
-                <h1>{data.description}</h1>
-                <Link to="/">Home</Link>
+  return (
+    <>
+      {data && (
+        <div>
+          <Header title="Detalhe do Produto" />
+          <div className="produtoSobre-container">
+            <div className="card-horizontal">
+              <img
+                src={data.photo_url}
+                alt={data.name}
+                className="card-image"
+              />
+              <div className="card-details">
+                <h1>{data.name}</h1>
+                <p>R$ {data.price}</p>
+                <p>{data.description}</p>
+              </div>
             </div>
-        }
-        </>
-    )
+          </div>
+          <Footer />
+        </div>
+      )}
+    </>
+  );
 }
 
 export default ProdutoSobre;

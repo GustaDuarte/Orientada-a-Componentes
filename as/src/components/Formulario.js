@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styles from "./Formulario.css";
+import styles from './Formulario.css';
 
 function Formulario() {
   const [formData, setFormData] = useState({
@@ -11,6 +11,12 @@ function Formulario() {
 
   async function handleSubmit(event) {
     event.preventDefault();
+
+    // Verifica se todos os campos obrigatórios estão preenchidos
+    if (!formData.name || !formData.price || !formData.description || !formData.photo_url) {
+      alert('Todos os campos são obrigatórios.');
+      return;
+    }
 
     // Make a POST request with the form data
     await fetch('http://localhost:3001/products', {
@@ -50,6 +56,7 @@ function Formulario() {
           value={formData.name}
           onChange={handleInputChange}
           placeholder='Nome'
+          required
         />
 
         <h3>Preço</h3>
@@ -59,7 +66,8 @@ function Formulario() {
           name='price'
           value={formData.price}
           onChange={handleInputChange}
-          placeholder='Preco'
+          placeholder='Preço'
+          required
         />
 
         <h3>Descrição</h3>
@@ -69,7 +77,8 @@ function Formulario() {
           name='description'
           value={formData.description}
           onChange={handleInputChange}
-          placeholder='Descricao'
+          placeholder='Descrição'
+          required
         />
 
         <h3>Imagem</h3>
@@ -79,7 +88,8 @@ function Formulario() {
           name='photo_url'
           value={formData.photo_url}
           onChange={handleInputChange}
-          placeholder='Img'
+          placeholder='Img-url'
+          required
         />
 
         <button className='buttonEnviar' type='submit'>

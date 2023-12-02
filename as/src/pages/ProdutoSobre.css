@@ -1,0 +1,35 @@
+.produtoSobre-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20px; /* Adicione um espaçamento no topo */
+}
+
+.card-horizontal {
+  width: 80%;
+  max-width: 800px;
+  background-color: #faf8f8;
+  color: rgb(8, 8, 8);
+  margin: 20px 0;
+  box-sizing: border-box;
+  border-radius: 10px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-image {
+  width: 100%;
+  height: 300px; /* Altura fixa da imagem */
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.card-details {
+  flex: 1;
+  padding: 15px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  border-radius: 0 0 10px 10px;
+}

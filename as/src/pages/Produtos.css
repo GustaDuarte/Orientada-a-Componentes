@@ -1,3 +1,52 @@
-h1{
+h1 {
     text-align: center;
+  }
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; 
+  gap: 20px; /* espaçamento entre os cards */
+  margin: 0; /* corrigir margem externa causada pelo gap */
 }
+
+.card {
+  width: 45%;
+  max-width: 400px;
+  background-color: #faf8f8;
+  color: rgb(8, 8, 8);
+  margin: 20px;
+  padding: 10px;
+  text-align: center;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  border-radius: 10%;
+  height: 450px; 
+  display: flex;
+  flex-direction: column;
+  overflow: hidden; /* corta a imagem com border-radius */
+}
+
+.card img {
+  width: 100%;
+  object-fit: cover;
+  max-height: 60%; /* Defina a altura máxima para a imagem ocupar 60% do card */
+  border-radius: 10% 10% 0 0; /* Arredonda apenas os cantos superiores */
+}
+
+.card-details {
+  flex: 1;
+  padding: 15px;
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  border-radius: 0 0 10% 10%; /* Arredonda apenas os cantos inferiores */
+  overflow: auto; /* Adicione uma barra de rolagem para o caso de o conteúdo ser muito longo */
+}
+
+.card-details p {
+  margin: 5px 0; /* Adicione um pequeno espaçamento vertical entre os parágrafos */
+  font-size: 14px; /* Ajuste o tamanho da fonte conforme necessário */
+}
+
+  
