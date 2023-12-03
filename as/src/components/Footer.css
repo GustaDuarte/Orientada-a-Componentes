@@ -1,18 +1,16 @@
 .footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: black;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    color: white;
-  }
-  
+  width: 100%;
+  box-sizing: border-box;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  color: white;
+}
+
   .footer h3 {
-    margin-left: 10px;
+    margin-left: 20px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
   

@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   padding-top: 20px; /* Adicione um espaçamento no topo */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .card-horizontal {
