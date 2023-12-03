@@ -1,4 +1,5 @@
-import { useContext, useEffect, useState } from "react";
+// ProdutoSobre.js
+import React, { useContext, useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { ProductContext } from "../contexts/productContext";
 import Footer from "../components/Footer";
@@ -37,7 +38,7 @@ function ProdutoSobre() {
               </div>
             </div>
           </div>
-          <Footer />
+          <Footer isProductPage />
         </div>
       )}
     </>

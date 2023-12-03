@@ -1,9 +1,10 @@
+// Footer.js
 import React from 'react';
-import styles from './Footer.css' 
+import styles from './Footer.css';
 
-function Footer() {
+function Footer({ isProductPage }) {
   return (
-    <div className="footer">
+    <div className={`footer ${isProductPage ? 'produtoSobre-footer' : ''}`}>
       <div>
         <h3>Ulbra Campus Torres</h3>
       </div>

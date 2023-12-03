@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styles from './Formulario.css';
+import usePost from '../hooks/usePost';
 
 function Formulario() {
   const [formData, setFormData] = useState({
@@ -9,7 +10,11 @@ function Formulario() {
     photo_url: '',
   });
 
-  async function handleSubmit(event) {
+  // Use o hook usePost
+  const postRequest = usePost;
+
+  // Função para lidar com o envio do formulário
+  const handleSubmit = async (event) => {
     event.preventDefault();
 
     // Verifica se todos os campos obrigatórios estão preenchidos
@@ -18,31 +23,33 @@ function Formulario() {
       return;
     }
 
-    // Make a POST request with the form data
-    await fetch('http://localhost:3001/products', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify(formData),
-    });
+    // Faz a requisição POST com os dados do formulário usando o hook usePost
+    const result = await postRequest('http://localhost:3001/products', formData);
 
-    // Clear the form after submission
-    setFormData({
-      name: '',
-      price: '',
-      description: '',
-      photo_url: '',
-    });
-  }
+    // Verifica o resultado da requisição
+    if (result.success) {
+      // Limpar o formulário após o envio bem-sucedido
+      setFormData({
+        name: '',
+        price: '',
+        description: '',
+        photo_url: '',
+      });
+      alert('Dados enviados com sucesso!');
+    } else {
+      // Mostra uma mensagem de erro se a requisição falhar
+      alert(`Erro ao enviar os dados: ${result.error}`);
+    }
+  };
 
-  function handleInputChange(event) {
+  // Função para lidar com mudanças nos inputs
+  const handleInputChange = (event) => {
     const { name, value } = event.target;
     setFormData({
       ...formData,
       [name]: value,
     });
-  }
+  };
 
   return (
     <div className='container'>

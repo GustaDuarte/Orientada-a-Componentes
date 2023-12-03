@@ -1,3 +1,13 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.content {
+  flex: 1; /* Isso faz com que a área de conteúdo ocupe o restante do espaço disponível */
+}
+
 .footer {
   width: 100%;
   box-sizing: border-box;
@@ -7,6 +17,10 @@
   align-items: center;
   padding: 20px;
   color: white;
+}
+
+.produtoSobre-footer {
+  margin-top: 45px;
 }
 
   .footer h3 {
@@ -26,3 +40,4 @@
     width: 30px;
     height: 30px;
   }
+
