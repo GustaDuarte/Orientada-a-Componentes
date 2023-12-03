@@ -12,6 +12,7 @@
   color: rgb(8, 8, 8);
   margin: 20px 0;
   box-sizing: border-box;
+  text-align: center;
   border-radius: 10px;
   overflow: hidden;
   display: flex;

@@ -33,7 +33,7 @@
       "name": "Produto 5",
       "price": 59.9,
       "description": "Descrição do Produto 5",
-      "photo_url": "https://exemplo.com/foto-produto-5.jpg"
+      "photo_url": "https://www.cavaletti.com.br/wp-content/uploads/2020/07/BANNER-YON.jpg"
     },
     {
       "id": 6,
@@ -160,6 +160,27 @@
       "description": "mais de 8.000",
       "photo_url": "https://www.hipertrofia.org/blog/wp-content/uploads/2023/08/free-Delivery-4-1068x601-1.jpg",
       "id": 23
+    },
+    {
+      "name": "teste",
+      "price": "121212",
+      "description": "dwdwdwd",
+      "photo_url": "https://www.hipertrofia.org/blog/wp-content/uploads/2023/08/free-Delivery-4-1068x601-1.jpg",
+      "id": 24
+    },
+    {
+      "name": "O Ladrão de Raios - Percy Jackson e os Olimpianos 1UtkHf203WBFZZMvI=/1200x630/smart/extras/conteudos/percy_jackson_capa.jpg",
+      "price": "50.00",
+      "description": "O adolescente Percy Jackson descobre que os deuses gregos e as criaturas mitológicas são reais. Ele é filho de uma divindade e logo entra para um acampamento de treinamento para semideuses. ",
+      "photo_url": "https://cdn.ome.lt/Jq4Kzaw2atLUtkHf203WBFZZMvI=/1200x630/smart/extras/conteudos/percy_jackson_capa.jpg",
+      "id": 25
+    },
+    {
+      "name": "Percy Jackson",
+      "price": "50.00",
+      "description": "O adolescente Percy Jackson descobre que os deuses gregos e as criaturas mitológicas são reais. Ele é filho de uma divindade e logo entra para um acampamento de treinamento para semideuses. ",
+      "photo_url": "https://www.cavaletti.com.br/wp-content/uploads/2020/07/BANNER-YON.jpg",
+      "id": 26
     }
   ]
 }
